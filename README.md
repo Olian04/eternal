@@ -41,6 +41,9 @@ Error: Something went wrong
 // eternalrc.json
 {
   "silent": false, // Disables all status logging done by eternal. 
-  "debug": false, // Enables debug logs from eternal 
+  "debug": false, // Enables debug logs from eternal
+  "restart-maximum": 3, // Number of times a process is allowed to restart within its grace period
+  "restart-timeout": 0, // Number of milliseconds eternal will wait before restarting a process after a crash
+  "restart-grace-period": 10000, // Number of milliseconds that must pass before a process is concidered to be "running"
 }
 ```
